@@ -18,7 +18,7 @@ if not os.path.exists(pet_path):
 pet_template = "./MNI/average_pet_template.nii.gz"
 output_root = "./temp_greedy_registration_outputs"
 
-greedy_path = "/mnt/sauce/littlab/tools/bin/greedy"  # Adjust this path if necessary
+greedy_path = "greedy"  # Adjust this path if necessary
 
 # Extract subject ID from filename
 subject_id = os.path.basename(pet_path).split(".")[0]
