@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 We have a pre-computed 18F-florbetapir template in MNI space computed from the GAAIN dataset.
 
-Download the template (here)[https://drive.google.com/file/d/1FxdcuMSAwM91dJM5-xXvE4z1mxCdjdl5/view?usp=sharing], and move it to the `MNI` directory within the repository.
+Download the template [here](https://drive.google.com/file/d/1FxdcuMSAwM91dJM5-xXvE4z1mxCdjdl5/view?usp=sharing), and move it to the `MNI` directory within the repository.
 
 ### Install Greedy
 
