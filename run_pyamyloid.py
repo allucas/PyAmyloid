@@ -3,10 +3,13 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 
 #!/usr/bin/env python3
 
 def main():
+    t0 = time.perf_counter()
+
     parser = argparse.ArgumentParser(description="Run coregistration then centiloid on a NIfTI file")
     parser.add_argument("nifti", help="path to input NIfTI (.nii or .nii.gz)")
     parser.add_argument(
@@ -62,7 +65,11 @@ def main():
     cent_cmd = [args.python, cent_path, args.nifti]
     try:
         ret = subprocess.run(cent_cmd, check=True)
+        t1 = time.perf_counter()
+        elapsed = t1 - t0
+        print(f"[INFO] Total processing time: {elapsed:.2f} seconds")
         sys.exit(ret.returncode)
+
     except subprocess.CalledProcessError as e:
         print(f"Centiloid script failed with exit code {e.returncode}", file=sys.stderr)
         sys.exit(e.returncode)
@@ -70,5 +77,7 @@ def main():
         print(f"Failed to run centiloid command: {e}", file=sys.stderr)
         sys.exit(1)
 
+
 if __name__ == "__main__":
     main()
+    
