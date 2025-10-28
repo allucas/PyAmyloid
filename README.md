@@ -29,14 +29,7 @@ PyAmyloid uses the Greedy registration tool for image coregistration.
 
 Download and install ITK-SNAP
 
-ITK-SNAP includes the greedy binary in its installation directory (e.g., /Applications/ITK-SNAP.app/Contents/bin/greedy on macOS, or C:\Program Files\ITK-SNAP 4.0.0\bin\greedy.exe on Windows)
-
-Add this binary to your PATH, for example:
-
-```bash
-export PATH="/Applications/ITK-SNAP.app/Contents/bin:$PATH"
-```
-or permanently add it in your `.bashrc` / `.zshrc`.
+Simply download ITK-SNAP 3.8 or later for your platform and run Help->Install Command-Line Tools from the ITK-SNAP main menu.
 
 To verify installation:
 
