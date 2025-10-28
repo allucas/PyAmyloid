@@ -1,0 +1,6 @@
+numpy>=1.25
+scipy>=1.11
+pandas>=2.1
+nibabel>=5.2
+nilearn>=0.10
+tqdm>=4.66
