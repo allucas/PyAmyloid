@@ -21,6 +21,12 @@ conda activate pyamyloid
 pip install -r requirements.txt
 ```
 
+### Download the 18F-Florbetapir Template 
+
+We have a pre-computed 18F-florbetapir template in MNI space computed from the GAAIN dataset.
+
+Download the template (here)[https://drive.google.com/file/d/1FxdcuMSAwM91dJM5-xXvE4z1mxCdjdl5/view?usp=sharing], and move it to the `MNI` directory within the repository.
+
 ### Install Greedy
 
 PyAmyloid uses the Greedy registration tool for image coregistration.
